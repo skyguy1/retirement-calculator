@@ -39,12 +39,57 @@ const FEDERAL_STANDARD_DEDUCTION_SINGLE = 13850; // Example for 2023. Applying t
 // Highly Simplified State Tax Logic (Illustrative - needs real data)
 // This is a placeholder and would need to be replaced with actual state tax rates/brackets.
 const SIMPLIFIED_STATE_TAX_RATES = {
-    'california': 0.08, // Flat 8% for simplicity
-    'new-york': 0.065,  // Flat 6.5%
-    'texas': 0,         // No state income tax
-    'florida': 0,       // No state income tax
-    // Add more states or use a more complex structure
-    'default': 0.04     // Default for states not listed
+    'alabama': 0.045,
+    'alaska': 0,
+    'arizona': 0.025,
+    'arkansas': 0.045,
+    'california': 0.08,    // Previously set
+    'colorado': 0.044,
+    'connecticut': 0.055,
+    'delaware': 0.05,
+    'florida': 0,          // Previously set
+    'georgia': 0.054,
+    'hawaii': 0.07,
+    'idaho': 0.05,
+    'illinois': 0.0495,
+    'indiana': 0.0315,
+    'iowa': 0.039,
+    'kansas': 0.05,
+    'kentucky': 0.045,
+    'louisiana': 0.04,
+    'maine': 0.06,
+    'maryland': 0.055,
+    'massachusetts': 0.05,
+    'michigan': 0.0425,
+    'minnesota': 0.07,
+    'mississippi': 0.04,
+    'missouri': 0.045,
+    'montana': 0.055,
+    'nebraska': 0.05,
+    'nevada': 0,           // Corrected
+    'new-hampshire': 0,
+    'new-jersey': 0.07,
+    'new-mexico': 0.05,
+    'new-york': 0.065,     // Previously set
+    'north-carolina': 0.045,
+    'north-dakota': 0.02,
+    'ohio': 0.035,
+    'oklahoma': 0.045,
+    'oregon': 0.08,
+    'pennsylvania': 0.0307,
+    'rhode-island': 0.05,
+    'south-carolina': 0.06,
+    'south-dakota': 0,
+    'tennessee': 0,
+    'texas': 0,            // Previously set
+    'utah': 0.0465,
+    'vermont': 0.07,
+    'virginia': 0.05,
+    'washington': 0,
+    'west-virginia': 0.05,
+    'wisconsin': 0.06,
+    'wyoming': 0,
+    'default': 0.04        // Retained as fallback
 };
 
 function calculateFederalTax(income) {
