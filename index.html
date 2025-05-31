@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retirement Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Financial Retirement Calculator</h1>
+
+        <div class="input-section">
+            <h2>Your Details</h2>
+            <label for="currentAge">Current Age:</label>
+            <input type="number" id="currentAge" value="60">
+
+            <label for="netWorth">Current Net Worth ($):</label>
+            <input type="number" id="netWorth" value="1000000">
+
+            <label for="stateOfResidence">State of Residence:</label>
+            <select id="stateOfResidence">
+                <option value="">Select State</option>
+                <!-- States will be populated by JavaScript -->
+            </select>
+        </div>
+
+        <div class="input-section">
+            <h2>Withdrawal Strategy</h2>
+            <label for="withdrawalStrategy">Select your desired withdrawal strategy:</label>
+            <select id="withdrawalStrategy">
+                <option value="0.04" selected>Aggressive (4% Withdrawal)</option>
+                <option value="0.03">Conservative (3% Withdrawal)</option>
+            </select>
+        </div>
+
+        <button id="calculateButton">Calculate</button>
+
+        <div class="results-section">
+            <h2>Estimated Annual Income (Retirement)</h2>
+            <p>Sustainable Annual Withdrawal (Pre-Tax, Today's Dollars): <span id="annualWithdrawalPreTax">$0</span></p>
+            <p>Estimated Federal Taxes: <span id="federalTaxes">$0</span></p>
+            <p>Estimated State Taxes: <span id="stateTaxes">$0</span></p>
+            <p><strong>Sustainable Annual Withdrawal (After-Tax, Today's Dollars): <span id="annualWithdrawalAfterTax">$0</span></strong></p>
+            <p>Equivalent Monthly Income (After-Tax, Today's Dollars): <span id="monthlyIncomeAfterTax">$0</span></p>
+            <p><small><em>Estimates based on a 30-year retirement period and assumed average returns & inflation. Tax calculations are simplified.</em></small></p>
+            <div id="errorMessages" class="error"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
